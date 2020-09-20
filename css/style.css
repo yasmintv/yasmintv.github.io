@@ -1,0 +1,200 @@
+﻿body {
+  font-family: "BM YEONSUNG", "Source Sans Pro", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  /* overflow: hidden; */
+  /* ~> background: url(sources/Cute.png) center 50% no-repeat fixed; */
+  background: url(../sources/Cute.png) center 10% no-repeat fixed;
+  /* background-repeat: no-repeat; */
+  background-size: 23em;
+  background-color: #ffe4c7;
+  font-weight: lighter;
+}
+
+/* .fold {
+	background-image: url("../img/fold.png");
+	background-repeat: no-repeat;
+	background-position: bottom left; 
+	background-size: 10%;
+} */
+
+.btn-no-bg {
+  background: none;
+  border-radius: 0;
+}
+
+.btn-no-bg:focus,
+.btn-no-bg:active {
+  background: none;
+  outline: none !important;
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn-sns {
+  border: 1px solid #000;
+  background: none;
+  border-radius: 0;
+  font-size: 1.7em;
+  line-height: 1.7em;
+}
+
+/* .btn-sns {
+  border: 1px solid #000;
+  border: none;
+  background: none;
+  border-radius: 0;
+  font-size: 1.7em;
+  line-height: 2.1em;
+  margin-right: 0.6em;
+  margin-left: 0.6em;
+}
+
+.sns-container {
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+} */
+
+.sns-container {
+  vertical-align: middle;
+  margin-top: 30em;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#twitchIcon,
+#twitterIcon,
+#instaIcon,
+#discordIcon,
+#ytIcon {
+  color: #000;
+}
+
+#twitchBtn:hover {
+  background-color: #9146ff;
+}
+
+#twitterBtn:hover {
+  background-color: #1da1f2;
+}
+
+#instaBtn:hover {
+  background-color: #fcaf45;
+}
+
+#discordBtn:hover {
+  background-color: #7289da;
+}
+
+#ytBtn:hover {
+  background-color: #ff0000;
+}
+
+/* #twitchIcon {
+  color: #000;
+}
+
+#twitchBtn {
+  background-color: #ffe4c7;
+}
+
+#twitchBtn:hover {
+  background-color: #ffe4c7;
+  color: #9146ff;
+
+}
+
+#twitterIcon {
+  color: #000;
+}
+
+#twitterBtn {
+  background-color: #ffe4c7;
+}
+
+#twitterBtn:hover {
+  background-color: #ffe4c7;
+  color: #1da1f2;
+}
+
+#instaIcon {
+  color: #000;
+}
+
+#instaBtn {
+  background-color: #ffe4c7;
+}
+
+#instaBtn:hover {
+  background-color: #ffe4c7;
+  color: #fcaf45;
+}
+
+#discordIcon {
+  color: #000;
+}
+
+#discordBtn {
+  background-color: #ffe4c7;
+}
+
+#discordBtn:hover {
+  background-color: #ffe4c7;
+  color: #7289da;
+}
+
+#ytIcon {
+  color: #000;
+}
+
+#ytBtn {
+  background-color: #ffe4c7;
+}
+
+#ytBtn:hover {
+  background-color: #ffe4c7;
+  color: #ff0000;
+} */
+
+/* #twitchIcon {
+  color: #000;
+}
+
+#twitchIcon:hover {
+  color: #9146ff;
+}
+
+#twitterIcon {
+  color: #000;
+}
+
+#twitterIcon:hover {
+  color: #1da1f2;
+}
+
+#instaIcon {
+  color: #000;
+}
+
+#instaIcon:hover {
+  color: #FCAF45;
+}
+
+#discordIcon {
+  color: #000;
+}
+
+#discordIcon:hover {
+  color: #7289da;
+}
+
+#ytIcon {
+  color: #000;
+}
+
+#ytIcon:hover {
+  color: #ff0000;
+} */
