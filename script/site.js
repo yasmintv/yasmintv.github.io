@@ -53,7 +53,7 @@ function lerp_to(fromColor, toColor) {
 		window.clearInterval(lerper);
 		lerper = 0;
 	}
-	console.log("new code");
+	// console.log("new code");
 	lerper = window.setInterval(function () {
 		if (current_progression >= 1) {
 			window.clearInterval(lerper);
@@ -61,10 +61,10 @@ function lerp_to(fromColor, toColor) {
 			current_progression = 0;
 		}
 		else {
-			console.log($("body").css("background-color"));
+			// console.log($("body").css("background-color"));
 			current_progression += step;
 			$("body").css("background-color", lerpColor(fromColor, toColor, current_progression));
-			console.log(toColor);
+			// console.log(toColor);
 		}
 	}, step_interval);
 }
