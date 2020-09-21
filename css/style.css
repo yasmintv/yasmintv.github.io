@@ -1,9 +1,9 @@
-body {
+﻿body {
   font-family: "BM YEONSUNG", "Source Sans Pro", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   /* overflow: hidden; */
   /* ~> background: url(sources/Cute.png) center 50% no-repeat fixed; */
-  background: url(../sources/Cute.png) center 10% no-repeat fixed;
+  background: url(../sources/Cute.png) center 10% no-repeat;
   /* background-repeat: no-repeat; */
   background-size: 23em;
   background-color: #ffe4c7;
@@ -84,4 +84,27 @@ body {
 
 #ytBtn:hover {
   background-color: #ff0000;
+}
+
+.animate-1 {
+  --animate-delay: 0.1s;
+}
+
+.animate-2 {
+  --animate-delay: 0.2s;
+}
+
+.animate-3 {
+  --animate-delay: 0.3s;
+}
+
+.animate-4 {
+  --animate-delay: 0.4s;
+}
+
+.animate-5 {
+  --animate-delay: 10s;
+}
+:root {
+  --animate-delay: 0.1s;
 }
