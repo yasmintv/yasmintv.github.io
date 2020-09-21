@@ -26,17 +26,17 @@ $(document).ready(function () {
 	});
 
 	$(".btn-sns").on("touchstart", function (e) {
-		lerpTo($("body").css("background-color"), button_colors[(this).id]);
+		// lerpTo($("body").css("background-color"), button_colors[(this).id]);
 	});
 
 	$(".btn-sns").on("touchmove", function (e) {
 		// $("body").css("background-color", "#ffe4c7");
-		lerpTo($("body").css("background-color"), "#ffe4c7");
+		// lerpTo($("body").css("background-color"), "#ffe4c7");
 	});
 
 	$(".btn-sns").on("touchend", function (e) {
 		// $("body").css("background-color", "#ffe4c7");
-		lerpTo($("body").css("background-color"), "#ffe4c7");
+		// lerpTo($("body").css("background-color"), "#ffe4c7");
 	});
 
 	$("#contactBtn").mouseover(function () {

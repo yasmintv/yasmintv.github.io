@@ -34,7 +34,7 @@
 
 .footer {
   color: #000;
-  /* position: absolute; */
+  position: absolute;
   /* bottom: 0.5%; */
   width: 100%;
   line-height: 1.5;
