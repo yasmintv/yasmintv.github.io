@@ -32,6 +32,16 @@ $(document).ready(function () {
 		// $("body").css("background-color", "#ffe4c7");
 		lerp_to($("body").css("background-color"), "#ffe4c7");
 	});
+
+	$("#contactBtn").mouseover(function () {
+        $("#contactIcon").removeClass("fa-envelope-o");
+        $("#contactIcon").addClass("fa-envelope");
+    });
+
+    $("#contactBtn").mouseout(function () {
+        $("#contactIcon").removeClass("fa-envelope");
+        $("#contactIcon").addClass("fa-envelope-o");
+    });
 });
 
 function lerp_to(fromColor, toColor) {

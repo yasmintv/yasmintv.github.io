@@ -10,6 +10,40 @@
   font-weight: lighter;
 }
 
+#contactBtn {
+  font-family: 'Pacifico', cursive;
+  font-size: 0.9em;
+  color: #000;
+  text-decoration: none;
+}
+
+#contactBtn::selection {
+  background: #000;
+  color: #ffe4c7;
+
+}
+
+#contactBtn::-moz-selection {
+  background: #000;
+  color: #ffe4c7;
+}
+
+#contactIcon {
+  font-size: 1.2em;
+  margin: 0.2em;
+}
+
+.contact {
+  color: #000;
+  position: fixed;
+  bottom: 0.5%;
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+  left: 0;
+  font-size: 0.9em;
+}
+
 .btn-sns {
   color: #000;
   border: 1px solid #000;
@@ -38,24 +72,6 @@
   border-radius: 0;
   text-decoration: none;
 }
-
-/* .btn-sns {
-  border: 1px solid #000;
-  border: none;
-  background: none;
-  border-radius: 0;
-  font-size: 1.7em;
-  line-height: 2.1em;
-  margin-right: 0.6em;
-  margin-left: 0.6em;
-}
-
-.sns-container {
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-} */
 
 .sns-container {
   vertical-align: middle;
