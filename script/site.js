@@ -4,7 +4,9 @@ var step = 0.05;
 var step_interval = 15;
 $(document).ready(function () {
 
+	COLLISION_WITH.push("a");
 	(new eSheep()).Start();
+
 	$("#twitchBtn").mouseover(function () {
 		// $("body").css("background-color", "#b481ff");
 		lerp_to($("body").css("background-color"), "#b481ff");
