@@ -32,15 +32,16 @@
   margin: 0.2em;
 }
 
-.contact {
+.footer {
   color: #000;
-  position: fixed;
-  bottom: 0.5%;
+  /* position: absolute; */
+  /* bottom: 0.5%; */
   width: 100%;
   line-height: 1.5;
   text-align: center;
   left: 0;
   font-size: 0.9em;
+  margin-top: 6.8em;
 }
 
 .btn-sns {
@@ -74,7 +75,7 @@
 
 .sns-container {
   vertical-align: middle;
-  margin-top: 30em;
+  margin-top: 28em;
   text-align: center;
   display: inline-block;
   width: 100%;

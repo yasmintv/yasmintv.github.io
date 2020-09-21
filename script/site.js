@@ -2,49 +2,71 @@ var lerper = 0;
 var current_progression = 0;
 var step = 0.05;
 var step_interval = 15;
+
+var button_colors = {
+	"twitchBtn": "#b481ff",
+	"twitterBtn": "#78c2ef",
+	"instaBtn": "#fbc77f",
+	"discordBtn": "#97a6da",
+	"ytBtn": "#fd7e7e"
+};
+
 $(document).ready(function () {
 
 	COLLISION_WITH.push("a");
 	(new eSheep()).Start();
 
-	$("#twitchBtn").mouseover(function () {
-		// $("body").css("background-color", "#b481ff");
-		lerp_to($("body").css("background-color"), "#b481ff");
-	});
-	$("#twitterBtn").mouseover(function () {
-		// $("body").css("background-color", "#78c2ef");
-		lerp_to($("body").css("background-color"), "#78c2ef");
-	});
-	$("#instaBtn").mouseover(function () {
-		// $("body").css("background-color", "#fbc77f");
-		lerp_to($("body").css("background-color"), "#fbc77f");
+	$(".btn-sns").mouseover(function () {
+		lerpTo($("body").css("background-color"), button_colors[(this).id]);
 	});
 
-	$("#discordBtn").mouseover(function () {
-		// $("body").css("background-color", "#97a6da");
-		lerp_to($("body").css("background-color"), "#97a6da");
-	});
-	$("#ytBtn").mouseover(function () {
-		// $("body").css("background-color", "#fd7e7e");
-		lerp_to($("body").css("background-color"), "#fd7e7e");
-	});
 	$(".btn-sns").mouseleave(function () {
 		// $("body").css("background-color", "#ffe4c7");
-		lerp_to($("body").css("background-color"), "#ffe4c7");
+		lerpTo($("body").css("background-color"), "#ffe4c7");
+	});
+
+	$(".btn-sns").on("touchstart", function (e) {
+		lerpTo($("body").css("background-color"), button_colors[(this).id]);
+	});
+
+	$(".btn-sns").on("touchmove", function (e) {
+		// $("body").css("background-color", "#ffe4c7");
+		lerpTo($("body").css("background-color"), "#ffe4c7");
+	});
+
+	$(".btn-sns").on("touchend", function (e) {
+		// $("body").css("background-color", "#ffe4c7");
+		lerpTo($("body").css("background-color"), "#ffe4c7");
 	});
 
 	$("#contactBtn").mouseover(function () {
-        $("#contactIcon").removeClass("fa-envelope-o");
-        $("#contactIcon").addClass("fa-envelope");
-    });
+		$("#contactIcon").removeClass("fa-envelope-o");
+		$("#contactIcon").addClass("fa-envelope");
+	});
 
-    $("#contactBtn").mouseout(function () {
-        $("#contactIcon").removeClass("fa-envelope");
-        $("#contactIcon").addClass("fa-envelope-o");
-    });
+	$("#contactBtn").mouseout(function () {
+		$("#contactIcon").removeClass("fa-envelope");
+		$("#contactIcon").addClass("fa-envelope-o");
+	});
+
+	$("#contactBtn").on("touchstart", function (e) {
+		$("#contactIcon").removeClass("fa-envelope-o");
+		$("#contactIcon").addClass("fa-envelope");
+	});
+
+	$("#contactBtn").on("touchend", function (e) {
+		$("#contactIcon").removeClass("fa-envelope");
+		$("#contactIcon").addClass("fa-envelope-o");
+	});
 });
 
-function lerp_to(fromColor, toColor) {
+function colorChange() {
+}
+
+function colorReset() {
+}
+
+function lerpTo(fromColor, toColor) {
 	// old
 	// $("body").css("background-color", toColor);
 	fromColor = rgb2hex(fromColor);
