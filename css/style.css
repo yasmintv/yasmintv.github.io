@@ -1,8 +1,8 @@
 ﻿body {
   font-family: "Yeon Sung", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* overflow: hidden; */
-  /* ~> background: url(sources/CuteClean.webp) center 50% no-repeat fixed; */
-  background: url(../sources/CuteClean.webp) center 10% no-repeat;
+  /* ~> background: url(sources/CuteClean.png) center 50% no-repeat fixed; */
+  background: url(../sources/CuteClean.png) center 10% no-repeat;
   /* background-repeat: no-repeat; */
   background-size: 23em;
   background-color: #ffe4c7;
